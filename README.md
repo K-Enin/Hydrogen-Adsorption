@@ -1,9 +1,10 @@
 # Hydrogen-Adsorption
 ## Balance Equations
-This repository presents the simulation code used in the paper with the title "Simulation of Hydrogen Drying via Adsorption in Offshore Hydrogen Production" (doi is followed).
+This repository presents the simulation code used in the paper with the title *Simulation of Hydrogen Drying via Adsorption in Offshore Hydrogen Production* (doi is followed).
 The file *BalanceEquations.py* is the main file in which the balance equations of an adsorption process are solved using the Finite-Difference Method and explicit discretization.
 It includes the mass balance equation for the solid and gas phase, the energy balance equation and the Ergun-equation for pressure loss calculation. Furthermore it includes parameters for the Langmuir-Freundlich isotherm, 
 which are fitted based on our measurement data.
+
 The *BalanceEquations.py* file reads one *mass_flow_xms.npy* datafile at a time, where x stands for the mean wind velocity in m/s. The values in the .npy files are the sum of the mass flows in mol/s exiting 3 x 5MW PEM-electrolyzers.
 The .npy files contain mass flows for a simulation period of 3 hours with a discretization step of dt_IWES = 0.01 sec. They are being cut to 1 hour.
 
