@@ -8,6 +8,8 @@ which are fitted based on our measurement data.
 The *BalanceEquations.py* file reads one *mass_flow_xms.npy* datafile at a time, where x stands for the mean wind velocity in m/s. The values in the .npy files are the sum of the mass flows in mol/s exiting 3 x 5MW PEM-electrolyzers.
 The .npy files contain mass flows for a simulation period of 3 hours with a discretization step of dt_IWES = 0.01 sec. They are being cut to 1 hour.
 
+In order to calculate the adsorption loading the file *BalanceEquations.py* simply has to be executed. Prior to that, a .npy with the desired wind speed has to be chosen (other .npy files need to be commented out).
+
 ## Folder "measurements and IAST prediction"
 The folder "measurements and IAST prediction" holds all relevant supplementary files. 
 
