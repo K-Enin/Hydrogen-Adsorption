@@ -9,7 +9,11 @@ The .npy files contain mass flows for a simulation period of 3 hours with a disc
 
 ## Folder "measurements and IAST prediction"
 The folder "measurements and IAST prediction" holds all relevant supplementary files. 
-"measurements and IAST prediction/PlotIsobars.py" shows our measurement data for adsorption isobars at pressures 1223 Pa and 23339 Pa for $T \in [24.91, 34.86, 44.86, 54.88, 64.89, 74.86, 84.86, 94.86, 104.87, 114.85, 124.82, 134.83, 144.79]$.
-"measurements and IAST prediction/FitParameters.py" fits the parameters to the Langmuir-Freundlich (LF) isotherm with the measurement data and support points form modified potential theory. This file also compares the resulting curve to a LF curve from existing literature (M.Gaeini).
-"measurements and IAST prediction/IAST.py" predicts the influence of hydrogen co-adsorption with the Ideal Adsorption Solution Theory (IAST). 
-"measurements and IAST prediction/individual_calculation_output.py" holds all support points obtained from modified potential theory.
+
+*measurements and IAST prediction/PlotIsobars.py* shows our measurement data for adsorption isobars at pressures 1223 Pa and 23339 Pa for $T \in [24.91, 34.86, 44.86, 54.88, 64.89, 74.86, 84.86, 94.86, 104.87, 114.85, 124.82, 134.83, 144.79]$.
+
+*measurements and IAST prediction/FitParameters.py* fits the parameters to the Langmuir-Freundlich (LF) isotherm with the measurement data and support points form modified potential theory. This file also compares the resulting curve to a LF curve from existing literature (M.Gaeini).
+
+*measurements and IAST prediction/IAST.py* predicts the influence of hydrogen co-adsorption with the Ideal Adsorption Solution Theory (IAST). 
+
+*measurements and IAST prediction/individual_calculation_output.py* holds all support points obtained from modified potential theory.
