@@ -20,7 +20,7 @@ import time
 plot_graph = True          # if true, plot graphs
 p_ergun_qu = False         # if true, calculate pressure loss with Ergun equation
 
-N = 23                     # we obtain the number of sections: N+1, with N+2 discretization points
+N = 24                     # we obtain the number of sections: N+1, with N+2 discretization points
 t_end_minutes = 60
 t_end = t_end_minutes*60   # total simulation time [s] -> #minutes*60s
 dt = 0.001                 # time step [s]
@@ -29,7 +29,7 @@ time_steps = int(t_end/dt)
 
 ## column parameter
 d_column = 0.3            # diameter of column [m]
-dz = 0.005               # height of one section [m] 
+dz = 0.005                # height of one section [m] 
 
 M_H2 = 0.002016            # molar mass of hydrogen [kg/mol]
 M_H2O = 0.018              # molar mass of water [kg/mol]
@@ -287,4 +287,5 @@ if plot_graph == True:
     plt.legend(loc = 'upper right')
     plt.show()
     end = time.time()
+
     
