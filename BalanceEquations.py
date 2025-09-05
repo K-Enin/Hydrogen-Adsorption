@@ -1,15 +1,8 @@
 """
-Explicit discretisation of the balance equations using the finite difference method
+Explicit discretization of the balance equations using the finite difference method
 Gradients for variation in mass flow were adjusted,
-concentration, initial temperature are assumed to be constant
-Pressure can be either fixed or adapted
-
-Important note on the model: when dz becomes smaller, you can see that X_s becomes larger. This is not wrong.
-The reason for this is that water is absorbed more quickly over time in a smaller section (because it is loaded first).
-If this section becomes larger, the load is distributed over a larger section and a kind of average is formed. 
-A larger section is loaded more slowly. With fine grid simulation, the aim should be to select dz as small as necessary 
-to give the best possible forecasts and not violate the CFL condition.
-For coarse simulation (how long does a load take), a large dz could be sufficient.
+Concentration and the initial temperature are assumed to be constant.
+Pressure can be either be fix or adapted to mass flows.
 """
 
 import numpy as np
@@ -289,3 +282,4 @@ if plot_graph == True:
     end = time.time()
 
     
+
